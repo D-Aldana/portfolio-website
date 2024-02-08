@@ -3,8 +3,8 @@ import logo from '../../assets/images/logo-DJ.png';
 import './index.scss';
 import AnimatedLetters from '../AnimatedLetters';
 import { useEffect, useState } from 'react';
-import Logo from './Logo';
 import myPicture from '../../assets/images/headshot.png';
+import Loader from 'react-loaders';
 
 const Home = () => {
     const [letterClass, setLetterClass] = useState('text-animate');
@@ -19,6 +19,7 @@ const Home = () => {
     , [])
 
     return (
+        <>
         <div className="container home-page">
             <div className='text-zone'>
                 <h1>
@@ -42,6 +43,8 @@ const Home = () => {
             <img src={myPicture} className='headshot'/>
 
         </div>
+        <Loader type='pacman' />
+        </>
     )
 }
 
