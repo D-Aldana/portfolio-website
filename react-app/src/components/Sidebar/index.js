@@ -3,7 +3,7 @@ import LogoS from '../../assets/images/logo-DJ.png'
 import { Link, NavLink } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope, faHome, faUser } from '@fortawesome/free-solid-svg-icons'
-import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
+import { faGithub, faLinkedin, faInstagram } from '@fortawesome/free-brands-svg-icons'
 
 
 const Sidebar = () => (
@@ -37,6 +37,11 @@ const Sidebar = () => (
             <li>
                 <a target="_blank" rel='noreferrer' href='https://github.com/D-Aldana'>
                     <FontAwesomeIcon icon={faGithub} color='#4d4d4e' />
+                </a>
+            </li>
+            <li>
+                <a target="_blank" rel='noreferrer' href='https://www.instagram.com/dj_aldana32/'>
+                    <FontAwesomeIcon icon={faInstagram} color='#4d4d4e' />
                 </a>
             </li>
         </ul>
