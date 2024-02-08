@@ -89,6 +89,12 @@
           content: 'CONTACT';
         }
       }
+
+      a.rps-link {
+        &:after {
+          content: 'RPS';
+        }
+      }
     
       a.active {
         svg{
