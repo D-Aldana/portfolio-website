@@ -25,6 +25,15 @@ const RPS = () => {
                     </h1>
                     <p>Write some stuff here</p>
                 </div>
+
+                <div className='video-zone'>
+                    <iframe 
+                        title='rps' 
+                        src="https://www.youtube.com/embed/kGOQfLFzJj8?si=6jtQ8GgAd1K61R6H" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowFullScreen 
+                        alt="Video Stream"/>
+                </div>
             </div>
             <Loader type='pacman' />
         </>
