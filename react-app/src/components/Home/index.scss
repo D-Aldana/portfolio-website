@@ -48,11 +48,12 @@
             animation: rotateIn 1s linear both;
             animation-delay: 1.4s;
             margin-bottom: -5px;
+            transition: transform 0.3s ease-in-out;
+            overflow: visible;
 
-            // &:hover {
-            //     animation: spin 1s;
-            //     animation-fill-mode: forwards;
-            // }
+            &:hover {
+                transform: scale(1.3);
+            }
         }
     }
 
@@ -94,7 +95,7 @@
         max-height: 90%;
         animation: fadeIn 1s 1.8s backwards;
         transition: transform 0.3s ease-in-out;
-        // transform-origin: center center;
+        border: 10px ridge #ffd700;
     
         &:hover {
             transform: scale(1.1);
