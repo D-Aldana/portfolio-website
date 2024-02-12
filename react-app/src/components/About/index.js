@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGitAlt, faPython, faDocker, faHtml5, faCss3, faReact } from '@fortawesome/free-brands-svg-icons';
 import Loader from 'react-loaders';
+import ParticleBackground from './Particles';
 
 const About = () => {
 
@@ -19,6 +20,7 @@ const About = () => {
     return (
         <>
         <div className='container about-page'>
+        
             <div className='text-zone'>
                 <h1>
                     <AnimatedLetters letterClass={letterClass} strArray={['A', 'b', 'o', 'u', 't', ' ', 'M', 'e']} idx={15} />
@@ -30,6 +32,7 @@ const About = () => {
             </div>
 
             <div className='stage-cube-cont'>
+                <ParticleBackground />
                 <div className='cubespinner'>
                     <div className='face1'>
                         <FontAwesomeIcon icon={faPython} color="#FFD438" />   

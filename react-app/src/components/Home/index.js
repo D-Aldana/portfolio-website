@@ -5,6 +5,7 @@ import AnimatedLetters from '../AnimatedLetters';
 import { useEffect, useState } from 'react';
 import myPicture from '../../assets/images/headshot.png';
 import Loader from 'react-loaders';
+import ParticleBackground from './Particles';
 
 const Home = () => {
     const [letterClass, setLetterClass] = useState('text-animate');
@@ -20,7 +21,9 @@ const Home = () => {
 
     return (
         <>
+        
         <div className="container home-page">
+        <ParticleBackground />
             <div className='text-zone'>
                 <h1>
                     <span className={letterClass}>H</span>
