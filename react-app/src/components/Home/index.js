@@ -6,6 +6,7 @@ import { useEffect, useState } from 'react';
 import myPicture from '../../assets/images/headshot.png';
 import Loader from 'react-loaders';
 import ParticleBackground from './Particles';
+import Carousel from './Carousel';
 
 const Home = () => {
     const [letterClass, setLetterClass] = useState('text-animate');
@@ -43,7 +44,8 @@ const Home = () => {
                 <Link to='/contact' className='flat-button'>CONTACT ME</Link>
             </div>
             
-            <img src={myPicture} className='headshot'/>
+            {/* <img src={myPicture} className='headshot'/> */}
+            <Carousel data={[myPicture, myPicture, myPicture]} className='carousel'/>
 
         </div>
         <Loader type='pacman' />
