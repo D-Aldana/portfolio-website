@@ -40,7 +40,7 @@ const Contact = () => {
                     </h1>
 
                     <p>
-                        Write some stuff here
+                    For inquiries regarding how my skills and experiences may contribute to your team, feel free to reach out to me via the form below or directly via email. 
                     </p>
 
                     <div className='contact-form'>

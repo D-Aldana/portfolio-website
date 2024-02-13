@@ -25,10 +25,18 @@ const About = () => {
                 <h1>
                     <AnimatedLetters letterClass={letterClass} strArray={['A', 'b', 'o', 'u', 't', ' ', 'M', 'e']} idx={15} />
                 </h1>
-                <p>Write about stuff here</p>
-                <p>Write about stuff here</p>
-                <p>Write about stuff here</p>
-                <p>Write about stuff here</p>
+                <p>
+                Originally hailing from Prince George, BC, I made the leap to Vancouver Island back in 2017 to pursue my passion for baseball at Vancouver Island University. After two years on the field, I decided to switch gears and dive into the exciting world of software engineering at the University of Victoria.
+                </p>
+                <p>
+                Following graduation, I embarked on an epic six-week backpacking adventure across six European countries, immersing myself in the diverse landscapes and cultures. Now, I've found myself back in Victoria, ready to tackle new challenges and make a mark in the software industry.
+                </p>
+                <p>
+                When I'm not immersed in coding or exploring new destinations, you can find me honing my skills in kickboxing, strategizing over a game of chess, or unwinding with some tunes on my guitar.
+                </p>
+                <p>
+                I'm always on the lookout for new opportunities to collaborate and learn from other passionate individuals. If you're interested in working together, feel free to reach out to me!
+                </p>
             </div>
 
             <div className='stage-cube-cont'>
