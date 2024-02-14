@@ -3,7 +3,7 @@ import LogoS from '../../assets/images/logo-DJ.png'
 import { Link, NavLink } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope, faHandScissors, faHome, faUser } from '@fortawesome/free-solid-svg-icons'
-import { faGithub, faLinkedin, faInstagram, faYoutube } from '@fortawesome/free-brands-svg-icons'
+import { faGithub, faLinkedin, faInstagram } from '@fortawesome/free-brands-svg-icons'
 
 
 const Sidebar = () => (
@@ -48,11 +48,11 @@ const Sidebar = () => (
                     <FontAwesomeIcon icon={faInstagram} color='#4d4d4e' />
                 </a>
             </li>
-            <li>
+            {/* <li>
                 <a target="_blank" rel='noreferrer' href='https://www.youtube.com/channel/UCJJ_2q-MeHCttDugO2KNEfw'>
                     <FontAwesomeIcon icon={faYoutube} color='#4d4d4e' />
                 </a>
-            </li>
+            </li> */}
         </ul>
     </div>
 
