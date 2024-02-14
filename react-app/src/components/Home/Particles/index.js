@@ -45,7 +45,7 @@ const ParticleBackground = () => {
         },
         particles: {
           number: {
-            value: 100,
+            value: 300,
             density: {
               enable: false,
             },
@@ -54,11 +54,22 @@ const ParticleBackground = () => {
             value: '#ffd700',
           },
           opacity: {
-            value: 0.5,
+            value: {
+                min: 0.1,
+                max: 0.5
+            },
             random: true,
+            animation: {
+                enable: true,
+                speed: 0.5,
+                sync: true
+            }
           },
           size: {
-            value: 2,
+            value: {
+              min: 1,
+              max: 2,
+            },
           },
           move: {
             enable: true,
