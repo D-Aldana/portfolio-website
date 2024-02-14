@@ -9,13 +9,7 @@ const ParticleBackground = () => {
     // this should be run only once per application lifetime
     useEffect(() => {
         initParticlesEngine(async (engine) => {
-        // you can initiate the tsParticles instance (engine) here, adding custom shapes or presets
-        // this loads the tsparticles package bundle, it's the easiest method for getting everything ready
-        // starting from v2 you can add only the features you need reducing the bundle size
-        //await loadAll(engine);
-        //await loadFull(engine);
         await loadSlim(engine);
-        //await loadBasic(engine);
         }).then(() => {
         setInit(true);
         });
@@ -45,25 +39,44 @@ const ParticleBackground = () => {
         },
         particles: {
           number: {
-            value: 100,
+            value: 800,
             density: {
-              enable: false,
+              enable: true,
+              area: 800,
             },
           },
           color: {
             value: '#fff',
           },
           opacity: {
-            value: 0.5,
+            value: {
+                min: 0.3,
+                max: 0.8
+            },
             random: true,
           },
           size: {
-            value: 2,
+            value: {
+              min: 0.1,
+              max: 2
+            }
           },
           move: {
             enable: true,
-            speed: 0.5,
+            speed: {
+              min: 0.1,
+              max: 2
+            },
+            direction: 'bottom',
           },
+          shape: {
+            type: 'circle',
+          },
+          wobble: {
+            enable: true,
+            distance: 50,
+            speed: 10,
+          },  
         },
         detectRetina: true,
         fpsLimit: 60,
