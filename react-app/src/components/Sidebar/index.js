@@ -3,7 +3,7 @@ import LogoS from '../../assets/images/logo-DJ.png'
 import { Link, NavLink } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope, faHandScissors, faHome, faUser } from '@fortawesome/free-solid-svg-icons'
-import { faGithub, faLinkedin, faInstagram } from '@fortawesome/free-brands-svg-icons'
+import { faGithub, faLinkedin, faInstagram, faYoutube } from '@fortawesome/free-brands-svg-icons'
 
 
 const Sidebar = () => (
@@ -29,6 +29,7 @@ const Sidebar = () => (
             <NavLink exact="true" activeclassname='active' to='/contact' className='contact-link'>
                 <FontAwesomeIcon icon={faEnvelope} color='#4d4d4e' />
             </NavLink> 
+            
         </nav>
 
         <ul>
@@ -45,6 +46,11 @@ const Sidebar = () => (
             <li>
                 <a target="_blank" rel='noreferrer' href='https://www.instagram.com/dj_aldana32/'>
                     <FontAwesomeIcon icon={faInstagram} color='#4d4d4e' />
+                </a>
+            </li>
+            <li>
+                <a target="_blank" rel='noreferrer' href='https://www.youtube.com/channel/UCJJ_2q-MeHCttDugO2KNEfw'>
+                    <FontAwesomeIcon icon={faYoutube} color='#4d4d4e' />
                 </a>
             </li>
         </ul>
