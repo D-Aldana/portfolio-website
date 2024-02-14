@@ -9,13 +9,7 @@ const ParticleBackground = () => {
     // this should be run only once per application lifetime
     useEffect(() => {
         initParticlesEngine(async (engine) => {
-        // you can initiate the tsParticles instance (engine) here, adding custom shapes or presets
-        // this loads the tsparticles package bundle, it's the easiest method for getting everything ready
-        // starting from v2 you can add only the features you need reducing the bundle size
-        //await loadAll(engine);
-        //await loadFull(engine);
         await loadSlim(engine);
-        //await loadBasic(engine);
         }).then(() => {
         setInit(true);
         });
@@ -45,32 +39,42 @@ const ParticleBackground = () => {
         },
         particles: {
           number: {
-            value: 100,
+            value: 200,
             density: {
               enable: false,
             },
           },
+          shape: {
+            type: "star",
+          },
           color: {
-            value: '#fff',
+            value: ['#fff', '#ffd700', '#00FFDD']
           },
           opacity: {
-            value: 0.5,
+            value: {
+                min: 0.1,
+                max: 0.5
+            },
             random: true,
+            animation: {
+                enable: true,
+                speed: 1,
+                sync: true
+            }
           },
           size: {
-            value: 2,
+            value: {
+                min: 0.5,
+                max: 2
+            }
+            }
           },
-          move: {
-            enable: true,
-            speed: 0.5,
-          },
-        },
         detectRetina: true,
         fpsLimit: 60,
         emitters: {
           direction: 'none',
           life: {
-            count: 0,
+            count: 10,
             duration: 0.1,
             delay: 0.1,
           },
@@ -88,7 +92,7 @@ const ParticleBackground = () => {
             y: 100,
           },
         },
-        preset: 'snow',
+        preset: 'stars',
       }),
       [],
   );
