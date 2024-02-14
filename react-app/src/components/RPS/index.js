@@ -2,6 +2,8 @@ import './index.scss'
 import Loader from 'react-loaders'
 import AnimatedLetters from '../AnimatedLetters';
 import { useEffect, useState } from 'react';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const RPS = () => {
 
@@ -22,7 +24,11 @@ const RPS = () => {
                 <div className='text-zone'>
                     <h1>
                         <AnimatedLetters letterClass={letterClass} strArray={title} idx={15} />
+                        <a target="_blank" rel='noreferrer' href='https://github.com/D-Aldana/RockPaperScissors'>
+                            <FontAwesomeIcon icon={faGithub} className='github-link' />
+                        </a>
                     </h1>
+                    
                     <p>Write some stuff here</p>
                 </div>
 

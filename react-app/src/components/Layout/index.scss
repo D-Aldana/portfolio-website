@@ -51,6 +51,18 @@
         position: relative;
         margin-bottom: 40px;
         left: -10px;
+
+        .github-link {
+          position: relative;
+          color: #4d4d4e;
+          left: 20px;
+          opacity: 0;
+          animation: fadeIn 1.5s 2s forwards;
+  
+          &:hover {
+            color: #ffd700;
+          }
+        }  
   
         &:before {
           content: '<h1>';
@@ -77,7 +89,7 @@
           opacity: 0.6;
         }
       }
-  
+    
       p {
         font-size: 16px;
         color: #fff;
@@ -93,6 +105,9 @@
         }
         &:nth-of-type(3) {
           animation-delay: 1.3s;
+        }
+        &:nth-of-type(4) {
+          animation-delay: 1.4s;
         }
       }
   
@@ -112,7 +127,7 @@
         color: #fff;
       }
     }
-    
+
     .video-zone {
       position: absolute;
       right: 7%;
