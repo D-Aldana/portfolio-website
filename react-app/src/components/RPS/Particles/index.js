@@ -51,7 +51,7 @@ const ParticleBackground = () => {
             },
           },
           color: {
-            value: '#ffd700',
+            value: '#fff',
           },
           opacity: {
             value: 0.5,
@@ -88,7 +88,7 @@ const ParticleBackground = () => {
             y: 100,
           },
         },
-        preset: 'firefly',
+        preset: 'snow',
       }),
       [],
   );

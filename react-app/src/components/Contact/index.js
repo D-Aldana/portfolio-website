@@ -4,6 +4,7 @@ import AnimatedLetters from '../AnimatedLetters'
 import { useEffect, useRef, useState } from 'react'
 import emailjs from '@emailjs/browser'
 import { MapContainer, TileLayer } from 'react-leaflet'
+import ParticleBackground from './Particles'
 
 const Contact = () => {
     const [letterClass, setLetterClass] = useState('text-animate');
@@ -34,6 +35,7 @@ const Contact = () => {
     return (
         <>
             <div className="container contact-page">
+                <ParticleBackground />
                 <div className='text-zone'>
                     <h1>
                         <AnimatedLetters letterClass={letterClass} strArray={['C', 'o', 'n', 't', 'a', 'c', 't', ' ', 'M', 'e']}  idx={15}/>

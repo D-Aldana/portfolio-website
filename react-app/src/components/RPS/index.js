@@ -4,6 +4,7 @@ import AnimatedLetters from '../AnimatedLetters';
 import { useEffect, useState } from 'react';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import ParticleBackground from './Particles';
 
 const RPS = () => {
 
@@ -21,6 +22,7 @@ const RPS = () => {
     return (
         <>
             <div className='container rps-page'>
+                <ParticleBackground />
                 <div className='text-zone'>
                     <h1>
                         <AnimatedLetters letterClass={letterClass} strArray={title} idx={15} />
@@ -38,7 +40,7 @@ const RPS = () => {
                     </p>
 
                     <p>
-                    To add a competitive edge, I incorporated Redis to store and display highscores, resulting in an engaging and dynamic gaming experience.
+                    To add a competitive edge, I incorporated Redis to store and display highscores.
                     </p>
 
                     <p>
