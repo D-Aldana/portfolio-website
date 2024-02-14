@@ -29,7 +29,21 @@ const RPS = () => {
                         </a>
                     </h1>
                     
-                    <p>Write some stuff here</p>
+                    <p>
+                    I created an interactive web application where users can play Rock Paper Scissors against a computer using their webcam. Leveraging Python and React, I engineered a seamless experience, capturing and processing webcam input with the OpenCV library.
+                    </p>
+
+                    <p>
+                    Integrating a trained TensorFlow model enabled real-time hand gesture detection, while a custom-built REST API, powered by Flask and SocketIO, facilitated smooth communication between the frontend and backend. 
+                    </p>
+
+                    <p>
+                    To add a competitive edge, I incorporated Redis to store and display highscores, resulting in an engaging and dynamic gaming experience.
+                    </p>
+
+                    <p>
+                    Click the Github link above to view the source code.
+                    </p>
                 </div>
 
                 <div className='video-zone'>
