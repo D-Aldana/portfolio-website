@@ -3,7 +3,9 @@ import logo from '../../assets/images/logo-DJ.png';
 import './index.scss';
 import AnimatedLetters from '../AnimatedLetters';
 import { useEffect, useState } from 'react';
-import myPicture from '../../assets/images/headshot.png';
+import baseballImg from '../../assets/images/baseball.jpg';
+import sitImg from '../../assets/images/sitting.JPG';
+import italyImg from '../../assets/images/italy.JPG';
 import Loader from 'react-loaders';
 import ParticleBackground from './Particles';
 import Carousel from './Carousel';
@@ -45,7 +47,7 @@ const Home = () => {
             </div>
             
             {/* <img src={myPicture} className='headshot'/> */}
-            <Carousel data={[myPicture, myPicture, myPicture]} className='carousel'/>
+            <Carousel data={[sitImg, italyImg, baseballImg]} className='carousel'/>
 
         </div>
         <Loader type='pacman' />

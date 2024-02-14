@@ -21,7 +21,6 @@ const Carousel = ( {data} ) => {
                 return (
                 <img
                     src={item}
-                    alt={item.alt}
                     key={idx}
                     className={slide === idx ? "slide" : "slide slide-hidden"}
                 />
