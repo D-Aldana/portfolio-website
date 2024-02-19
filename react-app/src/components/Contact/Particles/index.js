@@ -33,8 +33,15 @@ const ParticleBackground = () => {
             },
             onHover: {
               enable: true,
-              mode: "bubble",
+              mode: "repulse",
             },
+          },
+
+          modes: {
+            repulse: {
+              distance: 1,
+              duration: 1
+            }
           },
         },
         particles: {
