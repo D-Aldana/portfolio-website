@@ -51,7 +51,7 @@ const RPS = () => {
                 <div className='video-zone'>
                     <iframe 
                         title='rps' 
-                        src="https://www.youtube.com/embed/kGOQfLFzJj8?si=6jtQ8GgAd1K61R6H" 
+                        src="https://www.youtube.com/embed/9qtuz4oOwE8?si=x3XshcCGyBcBcZux" 
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
                         allowFullScreen 
                         alt="Video Stream"/>
