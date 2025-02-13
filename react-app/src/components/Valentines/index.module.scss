@@ -1,0 +1,117 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  padding: 2rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.svgText {
+  width: 100%;
+  max-width: 800px;
+}
+
+text {
+  font-size: 24px;
+  font-weight: bold;
+  fill: red;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.buttons {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+  margin-top: 2rem;
+  height: 100%;
+  width: 100%;
+}
+
+.noBtn,
+.yesBtn {
+  background-color: white;
+  color: rgb(221, 40, 71);
+  padding: 1rem 4rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.5rem;
+  transition: transform 0.2s ease-in-out;
+  z-index: 1111;
+}
+
+.noBtn {
+  &:hover {
+    background-color: rgb(221, 40, 71);
+    color: white;
+  }
+}
+
+.yesBtn {
+  &:hover {
+    background-color: rgb(221, 40, 71);
+    color: white;
+  }
+}
+
+.heartsContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.yesMessage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  img {
+    height: 400px;
+  }
+
+  .yay {
+    font-size: 3rem;
+    font-weight: bold;
+    color: rgb(221, 40, 71);
+    margin-top: 2rem;
+  }
+}
+
+.heart {
+  display: inline-block;
+  width: 20px;
+  aspect-ratio: 1;
+  border-image: radial-gradient(rgb(153, 90, 255) 69%, #0000 70%) 84.5%/50%;
+  clip-path: polygon(-41% 0, 50% 91%, 141% 0);
+  animation: heartAnimation 1s infinite;
+  position: absolute;
+  pointer-events: none;
+}
+
+.heart-pink {
+  display: inline-block;
+  width: 20px;
+  aspect-ratio: 1;
+  border-image: radial-gradient(rgb(226, 154, 196) 69%, #0000 70%) 84.5%/50%;
+  clip-path: polygon(-41% 0, 50% 91%, 141% 0);
+  animation: heartAnimation 1s infinite;
+  position: absolute;
+  pointer-events: none;
+}
+
+@keyframes heartAnimation {
+  0% {
+    transform: scale(1) rotate(45deg);
+  }
+  50% {
+    transform: scale(1.3) rotate(45deg);
+  }
+  100% {
+    transform: scale(1) rotate(45deg);
+  }
+}
